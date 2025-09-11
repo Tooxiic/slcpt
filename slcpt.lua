@@ -45,7 +45,7 @@ gm["Pirates Invasion"].Prison.Open:GetPropertyChangedSignal("Value"):Connect(fun
 end)
 
 gm["Pirates Invasion"].Prison.Wave:GetPropertyChangedSignal("Value"):Connect(function()
-    if gm["Pirates Invasion"].Prison.Wave.Value >= 50 then
+    if gm["Pirates Invasion"].Prison.Wave.Value >= 42 then
         wait(1)
         sig:FireServer(unpack({[1] = 'General', [2] = 'Teleport', [3] = 'Teleport', [4] = 'Lobby'}))
         wait(1)
